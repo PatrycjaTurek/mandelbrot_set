@@ -1,5 +1,4 @@
-// BasicGame.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 #include "stdafx.h"
 
 using namespace std;
@@ -54,9 +53,8 @@ void doo(int x, int width, int y, int height, int type, int w, int h)
 				SDL_SetRenderDrawColor(renderer, 0, type, 20, SDL_ALPHA_OPAQUE);
 				SDL_RenderDrawPoint(renderer, iX, iY);
 				m.unlock();
-			//	SDL_RenderPresent(renderer);
 			}
-			//else ((Zx2 + Zy2) < ER2) would be pixel beyone model
+			//else ((Zx2 + Zy2) < ER2) would be pixel beyond model
 		}
 	}
 }
@@ -67,9 +65,6 @@ void doo(int x, int width, int y, int height, int type, int w, int h)
 
 int main(int argc, char* args[])
 {
-
-	//#pragma region start
-
 
 	int size = 600;
 
